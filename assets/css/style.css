@@ -48,6 +48,18 @@ button:hover {
 
 }
 
+/* Answer button styling*/
+.answer-buttons button { 
+    background-color: #e1e1e1;
+    color: #003366;
+    font-weight: bold;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
 
 footer {
     text-align: center;

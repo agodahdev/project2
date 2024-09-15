@@ -60,6 +60,12 @@ button:hover {
     border: none;
 }
 
+/* Hover for answer buttons*/
+.answer-buttons button:hover {
+    background-color: #003366;
+    color: #fff;
+
+}
 
 footer {
     text-align: center;

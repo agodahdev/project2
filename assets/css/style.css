@@ -23,6 +23,14 @@ h1 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Username input field*/
+
+.username-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
 /*Orginal Button*/
 
 button {
@@ -31,7 +39,8 @@ button {
     border: none;  
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px
+    font-size: 16px;
+    padding: 10px 20px;
 }
 
 button:hover {
@@ -42,18 +51,11 @@ button:hover {
 
 footer {
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    
 }
 
-.username-input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-}
+
 
 /* Media Query for smaller screens*/
 @media (max-width: 600px) {

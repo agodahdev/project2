@@ -67,6 +67,12 @@ button:hover {
 
 }
 
+/* Feedback text*/ 
+.feedback-text {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
 footer {
     text-align: center;
     margin-top: 20px;

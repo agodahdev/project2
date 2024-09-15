@@ -15,21 +15,24 @@
      <main>
         <!-- section for username input-->
          <section class="username-section">
-            <label for="username" aria-label="Enter your username to start the quiz">Enter</label>
+            <label for="username" aria-label="Enter your username to start the quiz">Enter your username:</label>
             <!-- input field the username for the  user to type username-->
             <input class="username-input" type="text" placeholder="Your username" aria-required="true">
             <button class="start-btn">Start Quiz</button>
          </section>
 
          <!-- section for the quiz questions, hidden until the quiz starts-->
-         <section>
+         <section class="quiz-section" style="display: none">
+            <h2 class="question-text"></h2>
 
-            <h2></h2>
-
-            <div>
-
-                <p></p>
-
+            <div class="answer-buttons" role="group" aria-labelledby="question"></div>
+              
+            <!--showing feedback (correctly/incorrectly)-->
+            <p class="feedback-text"></p>
+            
+            <!-- to display the user's score-->
+            <div class="score-section">
+                <p>Score: <span class="score">0</span></p>
             </div>
 
             <button></button>
@@ -45,4 +48,4 @@
 
     <script src="assets/js/script.js"></script>
 </body>
-</html>s
+</html>

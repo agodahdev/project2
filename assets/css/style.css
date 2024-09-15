@@ -36,6 +36,7 @@ button {
 
 button:hover {
     background-color: #0056b3;
+
 }
 
 
@@ -52,4 +53,17 @@ footer {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
+}
+
+/* Media Query for smaller screens*/
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+}
+
+.username-section, .quiz-section {
+    padding: 10px;
+
 }

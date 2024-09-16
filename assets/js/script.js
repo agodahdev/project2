@@ -355,3 +355,16 @@ function selectAnswer(e) {
         restartButton.style.display = 'block';
     }
 }
+
+// Function to restart the quiz 
+function restartQuiz() {
+    //Reset the score
+    score = 0;
+    //Reset the question index
+    currentQuestionIndex = 0;
+    scoreElement.innerText = score;
+    //Hide the restart button
+    restartButton.style.display = 'none';
+    shuffleQuestions();
+    setNextQuestion();
+}

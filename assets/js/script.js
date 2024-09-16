@@ -402,7 +402,7 @@ function selectAnswer(e) {
         nextButton.style.display = 'block';
     } else {
         // Quiz completion
-        feedbackElement.innerText += "Quiz Finished!";
+        feedbackElement.innerText += " Quiz Finished!";
         // Shows restart button
         restartButton.style.display = 'block';
     }

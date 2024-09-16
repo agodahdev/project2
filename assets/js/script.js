@@ -249,6 +249,8 @@ const feedbackElement = document.querySelector('.feedback-text');
 const scoreElement = document.querySelector('.score');
 const usernameInput = document.querySelector('.username-input');
 
+startButton.addEventListener('click', startQuiz);
+
 
 // function to start quiz
 

@@ -231,3 +231,15 @@ const questions = [
 },
 
 ]
+
+// function to start quiz
+
+function startQuiz() {
+    if (!validateUsername() return; 
+    shuffleQuestions();
+    //Hides the username input
+    usernameSection.style.display = 'none';
+    //Shows quiz section
+    quizSection.style.display = 'block';
+    setNextQuestion();
+}

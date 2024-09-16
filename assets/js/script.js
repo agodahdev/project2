@@ -102,5 +102,67 @@ const questions = [
     ]
 },
 
+{
+    question: "Who won the Seria A title in the 20/21 season?",
+    answers: [
+        { text: "Inter Milan", correct: true},
+        { text: "Juventus", correct: false},
+        { text: "AC Milan", correct: false},
+        { text: "Napoli", correct: false},
+    ]
+},
+
+{
+    question: "Which Italian club has won the most UEFA Champions League titles?",
+    answers: [
+        { text: "AC Milan", correct: true},
+        { text: "Juventus", correct: false},
+        { text: "Inter Milan", correct: false},
+        { text: "Roma", correct: false},
+    ]
+},
+
+// La liga Questions
+
+{
+    question: "Which Spanish club has won the most La Liga titles?",
+    answers: [
+        { text: "Real Madrid", correct: true},
+        { text: "Barcelona", correct: false},
+        { text: "Atletico Madid", correct: false},
+        { text: "Valencia", correct: false},
+    ]
+},
+
+{
+    question: "Which player has the most La Liga goals in history?",
+    answers: [
+        { text: "Lionel Messi", correct: true},
+        { text: "Cristiano Ronaldo", correct: false},
+        { text: "Raúl", correct: false},
+        { text: "Alfredo Di Stéfano", correct: false},
+    ]
+},
+
+{
+    question: "Who won the La Liga title in the 18/19 season?",
+    answers: [
+        { text: "Barcelona", correct: true},
+        { text: "Real Madrid", correct: false},
+        { text: "Atletico Madrid", correct: false},
+        { text: "Sevilla", correct: false},
+    ]
+},
+
+{
+    question: "Which La Liga club has the most UEFA Champions League titles?",
+    answers: [
+        { text: "Real Madrid", correct: true},
+        { text: "Barcelona", correct: false},
+        { text: "Atletico Madrid", correct: false},
+        { text: "Sevilla", correct: false},
+    ]
+},
+
 
 ]

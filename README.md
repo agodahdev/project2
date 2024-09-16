@@ -40,10 +40,15 @@
     **Best Practices**: 100
     **SEO**: 100
 
+## Deployment:
 
+- The site is deployed by Github pages. 
+
+The live link can be found here: https://agodahdev.github.io/project2/
 
 ## Credit:
 
 -**Fisher-Yestes shuffle algorithm**: This project uses the Fisher-Yates algorithm in shuffle quiz questions. This is that the questions are 
 randomized each time the quiz is taken, offering a fresh experience for the user. (https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle).
+
 

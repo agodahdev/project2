@@ -289,7 +289,7 @@ function validateUsername() {
 function shuffleQuestions() {
     for (let i = questions.length - 1; i > 0 ; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [questions[i], questions[j]] = [questions[j], questions[1]];
+        [questions[i], questions[j]] = [questions[j], questions[i]];
     }
 }
 
@@ -338,7 +338,7 @@ function selectAnswer(e) {
     if (correct) {
         score++;
         //show postive feedback
-        feedbackElement,innerText = 'Correct!';
+        feedbackElement.innerText = 'Correct!';
         // Feedback color to green
         feedbackElement.style.color = 'green';
     } else {

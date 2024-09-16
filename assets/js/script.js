@@ -259,6 +259,8 @@ nextButton.addEventListener('click', () => {
     setNextQuestion();
 }
 
+restartButton.addEventListener('click', restartQuiz);
+
 
 // function to start quiz
 

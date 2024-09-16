@@ -15,7 +15,7 @@ const questions = [
 
 
 {
-    question: "Which footballer has won the most Ballon d'or awards?",
+    question: "Which footballer has won the most Ballon d'Or awards?",
     answers: [
         { text: "Cristiano Ronaldo", correct: false},
         { text: "Zinedine Zidane", correct: false},
@@ -25,12 +25,12 @@ const questions = [
 },
 
 {
-    question: "Which footballer club has won the most UEFA Cham?",
+    question: "Which country has won the most FIFA Confederations Cup?",
     answers: [
-        { text: "Cristiano Ronaldo", correct: false},
-        { text: "Zinedine Zidane", correct: false},
-        { text: "John Cruyff", correct: false},
-        { text: "Lionel Messi", correct: true},
+        { text: "Argentina", correct: false},
+        { text: "France", correct: false},
+        { text: "Germany", correct: false},
+        { text: "Brazil", correct: true},
         ]
 },
 
@@ -38,7 +38,7 @@ const questions = [
 {
     question: "Who is known as the 'king of Football'?",
     answers: [
-        { text: "Pele", correct: true},
+        { text: "Pelé", correct: true},
         { text: "Maradona", correct: false},
         { text: "Lionel Messi", correct: false},
         { text: "Cristiano Ronaldo", correct: false},
@@ -140,9 +140,9 @@ const questions = [
 {
     question: "Who won the Serie A title in the 20/21 season?",
     answers: [
-        { text: "Ac Milan", correct: false},
+        { text: "AC Milan", correct: false},
         { text: "Juventus", correct: false},
-        { text: "AC Milan", correct: true},
+        { text: "Inter Milan", correct: true},
         { text: "Napoli", correct: false},
     ]
 },
@@ -152,8 +152,8 @@ const questions = [
     answers: [
         { text: "Roma", correct: false},
         { text: "Inter Milan", correct: false},
-        { text: "Ac Milan", correct: false},
-        { text: "Juventus", correct: true},
+        { text: "Juventus", correct: false},
+        { text: "AC Milan", correct: true},
     ]
 },
 
@@ -202,7 +202,7 @@ const questions = [
 // World Cup Questions
 
 {
-    question: "Who won the FIFA World Cup in 2018?",
+    question: "Which country won the FIFA World Cup in 2018?",
     answers: [
         { text: "Brazil", correct: false},
         { text: "France", correct: true},
@@ -212,7 +212,7 @@ const questions = [
 },
 
 {
-    question: "Which player won the most World Cups?",
+    question: "Which player has won the most World Cups?",
     answers: [
         { text: "Pelé", correct: true},
         { text: "Diego Maradona", correct: false},
@@ -254,7 +254,7 @@ const questions = [
 },
 
 {
-    question: "Whch country won the first UEFA European Championship in 1960 ",
+    question: "Which country won the first UEFA European Championship in 1960 ",
     answers: [
         { text: "Soviet Union", correct: true},
         { text: "France", correct: false},

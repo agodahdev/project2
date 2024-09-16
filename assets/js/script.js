@@ -232,6 +232,7 @@ const questions = [
 
 ]
 
+
 // function to start quiz
 
 function startQuiz() {
@@ -254,4 +255,24 @@ function validateUsername() {
     }
     // Proceeds if the username is valid
     return true;
+}
+
+// Function to display a question and answers
+function showQuestion(question) {
+    questionElement.innerText = question.question;
+    question.answers.forEach(answer => {
+        const button = document.createElement('button');
+        //set the answer text
+        button.innerText = answer.text;
+        // add styling to the button
+        button.classList.add('btn');
+        button.setAttribute('aria-label',`Answer: ${answer.text}`);
+        if (answer.correct) {
+            //Mark the corrrec answer
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener('click', selectAnswer);
+        answerButtonsElement.appendChild(button);
+    });
+
 }

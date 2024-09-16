@@ -164,5 +164,35 @@ const questions = [
     ]
 },
 
+// World Cup Questions
 
+{
+    question: "Who won the FIFA World Cup in 2018?",
+    answers: [
+        { text: "France", correct: true},
+        { text: "Brazil", correct: false},
+        { text: "Germany", correct: false},
+        { text: "Argentina", correct: false},
+    ]
+},
+
+{
+    question: "Which player won the most World Cups?",
+    answers: [
+        { text: "Pelé", correct: true},
+        { text: "Diego Maradona", correct: false},
+        { text: "Zinedine Zidane", correct: false},
+        { text: "Lionel Messi", correct: false},
+    ]
+},
+
+{
+    question: "Which country hosted the 2010 FIFA World Cup?",
+    answers: [
+        { text: "South Africa", correct: true},
+        { text: "Brazil", correct: false},
+        { text: "Germany", correct: false},
+        { text: "Russia", correct: false},
+    ]
+},
 ]

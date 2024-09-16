@@ -249,7 +249,15 @@ const feedbackElement = document.querySelector('.feedback-text');
 const scoreElement = document.querySelector('.score');
 const usernameInput = document.querySelector('.username-input');
 
+
 startButton.addEventListener('click', startQuiz);
+
+nextButton.addEventListener('click', () => {
+    //Move to the next question
+    currentQuestionIndex++;
+    //display next question
+    setNextQuestion();
+}
 
 
 // function to start quiz

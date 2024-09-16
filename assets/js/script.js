@@ -232,6 +232,11 @@ const questions = [
 
 ]
 
+// Tracks the current question
+let currentQuestionIndex = 0;
+//  Tracks the user's score
+let score = 0;
+
 
 // function to start quiz
 

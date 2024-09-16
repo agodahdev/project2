@@ -286,6 +286,13 @@ function validateUsername() {
     return true;
 }
 
+//Function to display the next question 
+function setNextQuestion() {
+    resetState();
+    //displays the current question
+    showQuestion(questions[currentQuestionIndex]);
+}
+
 // Function to display a question and answers
 function showQuestion(question) {
     questionElement.innerText = question.question;

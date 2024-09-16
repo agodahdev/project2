@@ -248,6 +248,7 @@ const answerButtonsElement = document.querySelector('.answer-buttons');
 const feedbackElement = document.querySelector('.feedback-text');
 const scoreElement = document.querySelector('.score');
 const usernameInput = document.querySelector('.username-input');
+const quitButton = document.querySelector('.quit-btn');
 
 
 startButton.addEventListener('click', startQuiz);
@@ -261,6 +262,7 @@ nextButton.addEventListener('click', () => {
 
 restartButton.addEventListener('click', restartQuiz);
 
+quitButton.addEventListener('click', quitQuiz);
 
 // function to start quiz
 
@@ -271,7 +273,17 @@ function startQuiz() {
     usernameSection.style.display = 'none';
     //Shows quiz section
     quizSection.style.display = 'block';
+    quitButton.style.display = 'block';
     setNextQuestion();
+}
+
+// Function to handle quitting the quiz
+function quitQuiz() {
+    score = 0;
+    currentQuestionIndex = 0;
+    quizSection.style.display = 'none';
+    quitButton.style.display = 'none';
+    usernameSection.style.display = 'block';
 }
 
 // Function to validate the username input

@@ -168,6 +168,17 @@ footer {
     font-size: 1.3rem;
 }
 
+.welcome-message {
+    max-width: 1000px;
+    padding: 30px;
+}
 
+.welcome-message h2 {
+    font-size: 2.5rem;
+}
+
+.welcome-message p {
+    font-size: 1.2rem;
+}
 
 }

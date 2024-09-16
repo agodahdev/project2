@@ -3,7 +3,7 @@ const questions = [
 
     // General football Questions
 {
-    question: "Who is known as the 'king of Football?",
+    question: "Who is known as the 'king of Football'?",
     answers: [
         { text: "Pele", correct: true},
         { text: "Maradona", correct: false},
@@ -284,6 +284,13 @@ function validateUsername() {
     }
     // Proceeds if the username is valid
     return true;
+}
+
+function shuffleQuestions() {
+    for (let i = questions.length - 1; i > 0 ; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [questions[i], questions[j]] = [questions[j], questions[1]];
+    }
 }
 
 //Function to display the next question 

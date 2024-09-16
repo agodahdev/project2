@@ -1,14 +1,33 @@
 # Football Quiz Challenge
 
-- This project is an online football quiz that allows users to test their knowledge on football knowledge.
+- This site is an online football quiz that allows users to test their knowledge on football knowledge.
+
+![Website accross all devices](image.png)
 
 ## Features
 
-- **Start Quiz**: Users can enter their name and start the quiz.
-- **Questions Randomization**: Questions are shuffled each time the quiz is played
-- **Score Tracking**: The Quiz tracks and displays tghe user's score.
+- **Start Quiz**: Users must enter their username to start the quiz:
+
+
+![Pop up asking for username to be entered](image-4.png)
+
+
+- **Questions Randomization**: Questions are shuffled each time the quiz is played/
+
+![Quiz showing Random question](image-1.png)
+- **Score Tracking**: The Quiz tracks and displays the user's score.
+
+![Quiz showing correct Answer and Score](image-2.png)
 - **Next Question Button**: Allows users to progress through the quiz.
+
+![Next Question button](image-3.png)
+
+
+
 - **Restart and Quit options**: Users are able to restart the quiz or quit at any time.
+
+
+![Restart Quiz and Quit Button](image-5.png)
 
 ## Programs:
 
@@ -39,6 +58,9 @@
     **Accessbility**: 100
     **Best Practices**: 100
     **SEO**: 100
+
+
+  ![Lighthouse score](image-6.png)
 
 ## Deployment:
 

@@ -3,7 +3,7 @@ const questions = [
 
     // General football Questions
 {
-    question: "Who is known as the 'king of Football'?",
+    question: "Who is known as the 'king of Football?",
     answers: [
         { text: "Pele", correct: true},
         { text: "Maradona", correct: false},
@@ -12,7 +12,7 @@ const questions = [
     ]
 },
 {
-    question: "Which country has won the most FIFA World Cups'?",
+    question: "Which country has won the most FIFA World Cups?",
     answers: [
         { text: "Brazil", correct: true},
         { text: "Germany", correct: false},
@@ -21,7 +21,7 @@ const questions = [
     ]
 },
 {
-    question: "Who holds the record for most international goals in football'?",
+    question: "Who holds the record for most international goals in football?",
     answers: [
         { text: "Cristiano Ronaldo", correct: true},
         { text: "Lionel Messi", correct: false},
@@ -53,7 +53,7 @@ const questions = [
 },
 
 {
-    question: "Who was the Premier League's top scorere in the 20/21 season?",
+    question: "Who was the Premier League's top scorer in the 20/21 season?",
     answers: [
         { text: "Harry Kane", correct: true},
         { text: "Mohamed Salah", correct: false},
@@ -105,7 +105,7 @@ const questions = [
 },
 
 {
-    question: "Who won the Seria A title in the 20/21 season?",
+    question: "Who won the Serie A title in the 20/21 season?",
     answers: [
         { text: "Inter Milan", correct: true},
         { text: "Juventus", correct: false},
@@ -238,9 +238,9 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 
-const startButton = document.querySelector(',start-btn');
+const startButton = document.querySelector('.start-btn');
 const nextButton = document.querySelector('.next-btn');
-const restartButton = document.querySelector('.restar-btn');
+const restartButton = document.querySelector('.restart-btn');
 const usernameSection = document.querySelector('.username-section');
 const quizSection = document.querySelector('.quiz-section');
 const questionElement = document.querySelector('.question-text');
@@ -257,7 +257,7 @@ nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
     //display next question
     setNextQuestion();
-}
+});
 
 restartButton.addEventListener('click', restartQuiz);
 
@@ -265,7 +265,7 @@ restartButton.addEventListener('click', restartQuiz);
 // function to start quiz
 
 function startQuiz() {
-    if (!validateUsername() return; 
+    if (!validateUsername()) return; 
     shuffleQuestions();
     //Hides the username input
     usernameSection.style.display = 'none';

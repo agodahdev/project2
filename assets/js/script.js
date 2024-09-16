@@ -243,3 +243,15 @@ function startQuiz() {
     quizSection.style.display = 'block';
     setNextQuestion();
 }
+
+// Function to validate the username input
+function validateUsername() {
+    const username = usernameInput.value.trim();
+    if (username === '') {
+        //alter the user if the field is empty
+        alert('Please enter your username.');
+        return false;
+    }
+    // Proceeds if the username is valid
+    return true;
+}

@@ -113,6 +113,19 @@ footer {
     body {
         padding: 10px;
     }
+
+    .welcome-message {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .welcome-message h2 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-message p {
+        font-size: 1rem;
+    }
     
 }
 
@@ -154,5 +167,7 @@ footer {
 .feedback-text {
     font-size: 1.3rem;
 }
+
+
 
 }

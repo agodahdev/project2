@@ -1,5 +1,7 @@
 // Quiz questions and answers (25 questions)
 const questions = [
+
+    // General football Questions
 {
     question: "Who is known as the 'king of Football'?",
     answers: [
@@ -195,4 +197,37 @@ const questions = [
         { text: "Russia", correct: false},
     ]
 },
+
+// Euro Champanship Questions
+
+{
+    question: "Which player score the most goals in the UEFA European Championship history?",
+    answers: [
+        { text: "Cristiano Ronaldo", correct: true},
+        { text: "Michel Platini", correct: false},
+        { text: "Zlatan Ibrahimovic", correct: false},
+        { text: "Thierry Henry", correct: false},
+    ]
+},
+
+{
+    question: "Who won the UEFA European Championship in 2020 (played in 2021)",
+    answers: [
+        { text: "Cristiano Ronaldo", correct: true},
+        { text: "Michel Platini", correct: false},
+        { text: "Zlatan Ibrahimovic", correct: false},
+        { text: "Thierry Henry", correct: false},
+    ]
+},
+
+{
+    question: "Whch country won the first UEFA European Championship in 1960 ",
+    answers: [
+        { text: "Soviet Union", correct: true},
+        { text: "France", correct: false},
+        { text: "Spain", correct: false},
+        { text: "Germany", correct: false},
+    ]
+},
+
 ]

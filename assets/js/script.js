@@ -312,3 +312,46 @@ function showQuestion(question) {
     });
 
 }
+
+//Function to reset between questions
+function resetState() {
+    nextButton.style.display = 'none';
+    feedbackElement.innerText = '';
+    while (answerButtonsElement.firstChild) {
+        // Removes old answer buttons
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+    }
+}
+
+// Function to handle when answer is selected
+
+function selectAnswer(e) {
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    if (correct) {
+        score++;
+        //show postive feedback
+        feedbackElement,innerText = 'Correct!';
+        // Feedback color to green
+        feedbackElement.style.color = 'green';
+    } else {
+        feedbackElement.innerText = 'Wrong!';
+        // Set feedback color to red
+        feedbackElement.style.color = 'red';
+    }
+    //Update the score display
+    scoreElement.innerText = score;
+    Array.from(answerButtonsElement.children).forEach(button => {
+        //disabls all buttons after selection
+        button.disabled = true;
+    });
+    if (currentQuestionIndex < questions.length - 1) {
+        //Shows the "next" botton id more questons remain
+        nextButton.style.display = 'block';
+    } else {
+        // Quiz completion
+        feedbackElement.innerText += "Quiz Finished!";
+        // Shows restart button
+        restartButton.style.display = 'block';
+    }
+}

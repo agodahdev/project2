@@ -238,6 +238,18 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 
+const startButton = document.querySelector(',start-btn');
+const nextButton = document.querySelector('.next-btn');
+const restartButton = document.querySelector('.restar-btn');
+const usernameSection = document.querySelector('.username-section');
+const quizSection = document.querySelector('.quiz-section');
+const questionElement = document.querySelector('.question-text');
+const answerButtonsElement = document.querySelector('.answer-buttons');
+const feedbackElement = document.querySelector('.feedback-text');
+const scoreElement = document.querySelector('.score');
+const usernameInput = document.querySelector('.username-input');
+
+
 // function to start quiz
 
 function startQuiz() {

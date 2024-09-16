@@ -115,7 +115,7 @@ const questions = [
     ]
 },
 
-// Seria A Questions
+// Serie A Questions
 
 {
     question: "Which team has won the most Serie A titles?",
@@ -170,10 +170,10 @@ const questions = [
 },
 
 {
-    question: "Which player has the most La Liga goals in history?",
+    question: "Which player has scored the most La Liga goals in history?",
     answers: [
-        { text: "Lionel Messi", correct: true},
         { text: "Cristiano Ronaldo", correct: false},
+        { text: "Lionel Messi", correct: true},
         { text: "Raúl", correct: false},
         { text: "Alfredo Di Stéfano", correct: false},
     ]
@@ -204,8 +204,8 @@ const questions = [
 {
     question: "Who won the FIFA World Cup in 2018?",
     answers: [
-        { text: "France", correct: true},
         { text: "Brazil", correct: false},
+        { text: "France", correct: true},
         { text: "Germany", correct: false},
         { text: "Argentina", correct: false},
     ]
@@ -246,10 +246,10 @@ const questions = [
 {
     question: "Who won the UEFA European Championship in 2020 (played in 2021)",
     answers: [
-        { text: "Cristiano Ronaldo", correct: true},
-        { text: "Michel Platini", correct: false},
-        { text: "Zlatan Ibrahimovic", correct: false},
-        { text: "Thierry Henry", correct: false},
+        { text: "France", correct: false},
+        { text: "Italy", correct: true},
+        { text: "Germany", correct: false},
+        { text: "England", correct: false},
     ]
 },
 

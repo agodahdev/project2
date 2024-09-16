@@ -36,6 +36,10 @@ h1 {
     line-height: 1.6;
 }
 
+.welcome-message strong {
+    color: #003366;
+}
+
 /* Username and Quiz sections*/
 .username-section, .quiz-section {
     max-width: 600px;

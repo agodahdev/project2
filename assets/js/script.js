@@ -2,6 +2,39 @@
 const questions = [
 
     // General football Questions
+
+{
+    question: "Which country hosted the first FIFA World Cup?",
+    answers: [
+        { text: "Brazil", correct: false},
+        { text: "Italy", correct: false},
+        { text: "Uruguay", correct: true},
+        { text: "Argentina", correct: false},
+        ]
+},
+
+
+{
+    question: "Which footballer has won the most Ballon d'or awards?",
+    answers: [
+        { text: "Cristiano Ronaldo", correct: false},
+        { text: "Zinedine Zidane", correct: false},
+        { text: "John Cruyff", correct: false},
+        { text: "Lionel Messi", correct: true},
+        ]
+},
+
+{
+    question: "Which footballer club has won the most UEFA Cham?",
+    answers: [
+        { text: "Cristiano Ronaldo", correct: false},
+        { text: "Zinedine Zidane", correct: false},
+        { text: "John Cruyff", correct: false},
+        { text: "Lionel Messi", correct: true},
+        ]
+},
+
+
 {
     question: "Who is known as the 'king of Football'?",
     answers: [
@@ -14,8 +47,8 @@ const questions = [
 {
     question: "Which country has won the most FIFA World Cups?",
     answers: [
-        { text: "Brazil", correct: true},
         { text: "Germany", correct: false},
+        { text: "Brazil", correct: true},
         { text: "Argentina", correct: false},
         { text: "Italy", correct: false},
     ]
@@ -23,9 +56,9 @@ const questions = [
 {
     question: "Who holds the record for most international goals in football?",
     answers: [
-        { text: "Cristiano Ronaldo", correct: true},
+        { text: "Pelé", correct: false},
         { text: "Lionel Messi", correct: false},
-        { text: "Pele", correct: false},
+        { text: "Cristiano Ronaldo", correct: true},
         { text: "Ali Daei", correct: false},
     ]
 },
@@ -35,10 +68,10 @@ const questions = [
 {
     question: "Which player has the most Premier League goals in a single season?",
     answers: [
-        { text: "Alan Shearer", correct: true},
+        { text: "Alan Shearer", correct: false},
         { text: "Mohamed Salah", correct: false},
         { text: "Thierry Henry", correct: false},
-        { text: "Sergio Agüero", correct: false},
+        { text: "Erik Haaland", correct: true},
     ]
 },
 
@@ -55,18 +88,18 @@ const questions = [
 {
     question: "Who was the Premier League's top scorer in the 20/21 season?",
     answers: [
-        { text: "Harry Kane", correct: true},
         { text: "Mohamed Salah", correct: false},
+        { text: "Harry Kane", correct: true},
         { text: "Bruno Fernandes", correct: false},
         { text: "Raheem Sterling", correct: false},
     ]
 },
 
 {
-    question: "Who won the Premier League title in 15/16 season?",
+    question: "Who won the Premier League title in the 15/16 season?",
     answers: [
-        { text: "Leicester City", correct: true},
         { text: "Chelsea", correct: false},
+        { text: "Leicester city", correct: true},
         { text: "Manchester City", correct: false},
         { text: "Arsenal", correct: false},
     ]
@@ -87,9 +120,9 @@ const questions = [
 {
     question: "Which team has won the most Serie A titles?",
     answers: [
-        { text: "Juventus", correct: true},
-        { text: "AC Milan", correct: false},
         { text: "Inter Milan", correct: false},
+        { text: "AC Milan", correct: false},
+        { text: "Juventus", correct: true},
         { text: "Roma", correct: false},
     ]
 },
@@ -107,9 +140,9 @@ const questions = [
 {
     question: "Who won the Serie A title in the 20/21 season?",
     answers: [
-        { text: "Inter Milan", correct: true},
+        { text: "Ac Milan", correct: false},
         { text: "Juventus", correct: false},
-        { text: "AC Milan", correct: false},
+        { text: "AC Milan", correct: true},
         { text: "Napoli", correct: false},
     ]
 },
@@ -117,10 +150,10 @@ const questions = [
 {
     question: "Which Italian club has won the most UEFA Champions League titles?",
     answers: [
-        { text: "AC Milan", correct: true},
-        { text: "Juventus", correct: false},
-        { text: "Inter Milan", correct: false},
         { text: "Roma", correct: false},
+        { text: "Inter Milan", correct: false},
+        { text: "Ac Milan", correct: false},
+        { text: "Juventus", correct: true},
     ]
 },
 

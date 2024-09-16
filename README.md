@@ -1,6 +1,4 @@
-#Football Quiz Challenge
-
-# 
+# Football Quiz Challenge
 
 - This project is an online football quiz that allows users to test their knowledge on football knowledge.
 
@@ -12,7 +10,7 @@
 - **Next Question Button**: Allows users to progress through the quiz.
 - **Restart and Quit options**: Users are able to restart the quiz or quit at any time.
 
-## Features:
+## Programs:
 
 - **HTML**: Provides the structure of the web page.
 - **CSS**: Styles the web page for a better user experience.
@@ -37,7 +35,15 @@
   - The website uses good color contrast and includes alt text for image and accessible by running it through lighthouse inndev tools
 
   - **lighthouse performance**:
-    -**Performance**: 100
-    -**Accessbility**: 100
-    -**Best Practices**: 100
-    -**SEO**:100
+    **Performance**: 100
+    **Accessbility**: 100
+    **Best Practices**: 100
+    **SEO**: 100
+
+
+
+## Credit:
+
+-**Fisher-Yestes shuffle algorithm**: This project uses the Fisher-Yates algorithm in shuffle quiz questions. This is that the questions are 
+randomized each time the quiz is taken, offering a fresh experience for the user. (https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle).
+

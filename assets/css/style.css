@@ -30,6 +30,12 @@ h1 {
     margin-bottom: 10px;
 }
 
+.welcome-message p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
 /* Username and Quiz sections*/
 .username-section, .quiz-section {
     max-width: 600px;

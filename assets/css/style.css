@@ -68,11 +68,20 @@ button {
     cursor: pointer;
     font-size: 16px;
     padding: 10px 20px;
+    margin: 5px;
 }
 
 button:hover {
     background-color: #0056b3;
 
+}
+
+.quit-btn {
+    margin-top: 15px;
+}
+
+.next-btn {
+    margin-bottom: 15px;
 }
 
 /* Answer button styling*/

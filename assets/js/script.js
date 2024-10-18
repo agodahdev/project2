@@ -396,11 +396,11 @@ function selectAnswer(e) {
     //Update the score display
     scoreElement.innerText = score;
     Array.from(answerButtonsElement.children).forEach(button => {
-        //disabls all buttons after selection
+        //disables all buttons after selection
         button.disabled = true;
     });
     if (currentQuestionIndex < questions.length - 1) {
-        //Shows the "next" botton id more questons remain
+        //Shows the "next" button id more questons remain
         nextButton.style.display = 'block';
     } else {
         // Quiz completion

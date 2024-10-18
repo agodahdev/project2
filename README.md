@@ -35,6 +35,7 @@
 - **CSS**: Styles the web page for a better user experience.
 - **JavaScript**: Manages the quiz inertactivily, score tracking, and score tracking and question handling.
 
+
 ## Validator Testing:
 
  - **HTML**:
@@ -61,6 +62,18 @@
 
 
   ![Lighthouse score](image-6.png)
+
+## Testing:
+- **Username Validation**:
+  - if the user tries to start the quiz without entering username, a red validation message appears, prompting them to enter their name.
+    This was added to replacec the old alter boxes to improve user experience.
+
+- **Randomized Question Order**:
+  - The question appeared to be in the same order each time so you restart the quiz. After adding the Fisher-Yates algorithm it ensured that they appeared in different order with each attemp, enhancing the user's experience.
+
+- **Correct Answer Placement**:
+
+  - After testing the answer, i noticed that the correct answer was always the first choice. Instead now, the correct answers are randomly, making the quiz more challenging.
 
 ## Deployment:
 

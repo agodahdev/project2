@@ -283,6 +283,8 @@ const scoreElement = document.querySelector('.score');
 const usernameInput = document.querySelector('.username-input');
 const quitButton = document.querySelector('.quit-btn');
 
+const validationMessage = document.querySelector('.validation-message');
+
 
 startButton.addEventListener('click', startQuiz);
 
@@ -321,13 +323,13 @@ function quitQuiz() {
 
 // Function to validate the username input
 function validateUsername() {
+    const validationMessage = document.querySelector('.validation-message');
     const username = usernameInput.value.trim();
     if (username === '') {
-        //alter the user if the field is empty
-        alert('Please enter your username.');
+        validationMessage.innerText = 'Please enter your username.';
         return false;
     }
-    // Proceeds if the username is valid
+    validationMessage.innerText = '';
     return true;
 }
 

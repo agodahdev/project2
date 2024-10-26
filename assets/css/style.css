@@ -40,11 +40,20 @@ h1 {
     color: #003366;
 }
 
-/* Question Tracker Styling - New CSS for the question tracker */
+/* Question Tracker */
 .question-tracker {
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
+    color: green;
+    margin-bottom: 10px;
+}
+/* Timer Display */
+.timer {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: red;
     margin-bottom: 10px;
 }
 

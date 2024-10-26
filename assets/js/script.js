@@ -288,6 +288,11 @@ const validationMessage = document.querySelector('.validation-message');
 const currentQuestionDisplay = document.querySelector('.current-question');
 const totalQuestionsDisplay = document.querySelector('.total-questions');
 
+// Timer Variables 
+let timeRemaining = 300; // 5 minutes in seconds
+let timerInterval; // Holds the timer interval
+const timeRemainingDisplay = document.querySelector('.time-remaining');
+
 /* Set the total number of questions at the beginning */
 totalQuestionsDisplay.innerText = questions.length;
 
@@ -316,7 +321,50 @@ function startQuiz() {
     //Shows quiz section
     quizSection.style.display = 'block';
     quitButton.style.display = 'block';
+
+    // Start the timer when the quiz begins
+    startTimer();
     setNextQuestion();
+}
+
+// Function to start the timer 
+function startTimer() {
+    timeRemaining = 300; // Reset time for each quiz session
+    timerInterval = setInterval(() => {
+        // Calculate minutes and seconds
+        const minutes = Math.floor(timeRemaining / 60);
+        const seconds = timeRemaining % 60;
+        
+        // Display the time in "MM:SS" format
+        timeRemainingDisplay.innerText = `${minutes.toString().padStart(1, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+        // Decrement the timer
+        timeRemaining--;
+
+        // If time runs out, stop the timer and end the quiz
+        if (timeRemaining < 0) {
+            clearInterval(timerInterval);
+            endQuizDueToTimeout();
+        }
+    }, 1000); // Update every second
+}
+
+// Function to handle quiz timeout
+function endQuizDueToTimeout() {
+    feedbackElement.innerText = "Time's up! Your final score is " + score + ".";
+    feedbackElement.style.color = 'red';
+
+    // Disable all answer buttons
+    Array.from(answerButtonsElement.children).forEach(button => {
+        button.disabled = true;
+    });
+    
+    // Hide navigation buttons and show restart button
+    nextButton.style.display = 'none';
+    restartButton.style.display = 'block';
+
+    // Hide the timer display
+    document.querySelector('.timer').style.display = 'none';
 }
 
 // Function to handle quitting the quiz
@@ -411,6 +459,10 @@ function selectAnswer(e) {
         //Shows the "next" button id more questons remain
         nextButton.style.display = 'block';
     } else {
+
+        // Stop the timer when quiz finishes
+        clearInterval(timerInterval);
+        
         // Quiz completion
         feedbackElement.innerText += " Quiz Finished!";
         // Shows restart button

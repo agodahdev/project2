@@ -35,6 +35,11 @@
 
 ![Restart Quiz and Quit Button](image-5.png)
 
+- **404 Page**: A custom 404 error page that guides users back to the home page if they navigate to a non-existent page.
+
+![alt text](image-12.png)
+
+
 ## Programs:
 
 - **HTML**: Provides the structure of the web page.
@@ -84,6 +89,12 @@
 
 - **Timer Feature**: 
    - Started the quiz and let the timer run down to 0:00. When the timer reaches 0:00, the quiz ends automatically, and the final score is displayed. The timer should appear in red for visibility.
+
+- **404 Page**
+   - Visit a non-existent URL on the site and The 404 page should appear with a "Page Not Found" message and a button that redirects back to the home page.
+
+
+
 
 
 

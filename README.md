@@ -40,6 +40,19 @@
 ![alt text](image-12.png)
 
 
+## How to Use
+
+1. Open the quiz webpage.
+2. Enter your username and press Start Quiz.
+3. The timer starts once the quiz begins. Answer each question by selecting an option.
+4. Track your score and progress via the score display and question tracker.
+5. If the timer reaches 0:00, the quiz ends automatically, and your score is displayed.
+6. Quit and Restart Options:
+   - Quit: Press the Quit button at any time to exit the quiz and return to the username input screen.
+   - Restart: Press the Restart button to reset the quiz with a new question order and a fresh timer.
+
+
+
 ## Programs:
 
 - **HTML**: Provides the structure of the web page.

@@ -284,6 +284,13 @@ const usernameInput = document.querySelector('.username-input');
 const quitButton = document.querySelector('.quit-btn');
 
 const validationMessage = document.querySelector('.validation-message');
+/* Added new constants below to track question progress */
+const currentQuestionDisplay = document.querySelector('.current-question');
+const totalQuestionsDisplay = document.querySelector('.total-questions');
+
+/* Set the total number of questions at the beginning */
+totalQuestionsDisplay.innerText = questions.length;
+
 
 
 startButton.addEventListener('click', startQuiz);
@@ -340,11 +347,12 @@ function shuffleQuestions() {
     }
 }
 
-//Function to display the next question 
+/* Updated setNextQuestion to update the question tracker */
 function setNextQuestion() {
     resetState();
-    //displays the current question
     showQuestion(questions[currentQuestionIndex]);
+    // Update the question tracker display
+    currentQuestionDisplay.innerText = currentQuestionIndex + 1;
 }
 
 // Function to display a question and answers

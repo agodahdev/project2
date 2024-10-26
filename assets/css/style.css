@@ -40,6 +40,14 @@ h1 {
     color: #003366;
 }
 
+/* Question Tracker Styling - New CSS for the question tracker */
+.question-tracker {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 /* Username and Quiz sections*/
 .username-section, .quiz-section {
     max-width: 600px;

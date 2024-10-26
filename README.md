@@ -22,6 +22,9 @@
 
 ![Next Question button](image-3.png)
 
+- **Question Tracker**: This feature makes it easy for users to know how many questions are left, helping them stay engaged and informed as they complete the quiz.
+
+![alt text](image-7.png)
 
 
 - **Restart and Quit options**: Users are able to restart the quiz or quit at any time.

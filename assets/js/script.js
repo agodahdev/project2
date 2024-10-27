@@ -315,6 +315,7 @@ quitButton.addEventListener('click', quitQuiz);
 
 function startQuiz() {
     if (!validateUsername()) return; 
+    clearInterval(timerInterval); // Clear any previous timer
     shuffleQuestions();
     //Hides the username input
     usernameSection.style.display = 'none';
@@ -367,10 +368,15 @@ function endQuizDueToTimeout() {
     document.querySelector('.timer').style.display = 'none';
 }
 
-// Function to handle quitting the quiz
+// Function to Quit Quiz
 function quitQuiz() {
-    score = 0;
-    currentQuestionIndex = 0;
+    clearInterval(timerInterval); // Clear any running timer
+    score = 0; // Reset score
+    currentQuestionIndex = 0; // Reset question index
+    feedbackElement.innerText = ''; // Clear any feedback messages
+    timeRemaining = 300; // Reset timer
+
+    // Hide quiz section and show username input section
     quizSection.style.display = 'none';
     quitButton.style.display = 'none';
     usernameSection.style.display = 'block';
@@ -470,15 +476,19 @@ function selectAnswer(e) {
     }
 }
 
-// Function to restart the quiz 
 function restartQuiz() {
-    //Reset the score
-    score = 0;
-    //Reset the question index
-    currentQuestionIndex = 0;
-    scoreElement.innerText = score;
-    //Hide the restart button
-    restartButton.style.display = 'none';
-    shuffleQuestions();
-    setNextQuestion();
+    score = 0; // Reset score
+    currentQuestionIndex = 0; // Reset question index
+    scoreElement.innerText = score; // Update score display
+    feedbackElement.innerText = ''; // Clear any feedback messages
+    timeRemaining = 300; // Reset time to 5 minutes
+    document.querySelector('.timer').style.display = 'block'; // Ensure timer is visible
+
+    // Start the timer again for a new session
+    clearInterval(timerInterval); // Clear any existing timer
+    startTimer(); // Restart timer
+
+    restartButton.style.display = 'none'; // Hide restart button
+    shuffleQuestions(); // Shuffle questions for a new quiz session
+    setNextQuestion(); // Load the first question
 }
